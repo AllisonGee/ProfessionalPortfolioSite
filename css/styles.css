@@ -1,0 +1,61 @@
+* {
+  background-color: white;
+  color: black;
+  border: pink 1px dashed;
+  padding: 9px;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+body{
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.side-container{
+  background-color: #452222;
+  width: 3000px;
+  height: 4000px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 5000px;
+}
+
+.job-container{
+  display: flex;
+  flex-direction: row;
+  width: 3px;
+}
+
+.blurb-container{
+  width: 500px
+}
+
+
+
+.content-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 50px;
+}
