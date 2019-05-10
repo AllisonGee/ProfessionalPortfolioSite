@@ -3,12 +3,19 @@
   color: black;
   border: pink 1px dashed;
   padding: 9px;
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
 }
 
 .header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.top-logo{
+  background-color: #452222
+
 }
 
 .body{
@@ -24,27 +31,91 @@
   justify-content: flex-end;
 }
 
-.side-container{
-  background-color: #452222;
-  width: 300px;
-  height: 400px;
-}
-
-
-
-.job-container{
-  display: flex;
-  flex-direction: row;
-
-}
-
 .job-content{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.content-container{
+
+.nav{
+  text-align: center;
+}
+
+
+.sprout, .becca, .iprospect, .orva, .tane-organics, .whiteandwarren{
   display: flex;
-  flex-direction: row;
+  justify-content: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* top navigation link formatting */
+
+/* unvisited link */
+a.top-nav:link {
+  text-decoration: none;
+  text-decoration: none;
+  color: white;
+}
+
+/* visited link */
+a{
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: #CE5B78;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+  text-decoration: none;
+}
+
+.header{
+  background-color: #452222;
+}
+
+.top-nav{
+  background-color: #452222;
+}
+
+a, nav, p{
+  background-color: #452222;
+}
+
+p{
+  color: white;
 }
