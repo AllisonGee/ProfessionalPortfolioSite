@@ -1,20 +1,38 @@
 * {
   background-color: white;
-  color: black;
-  border: pink 1px dashed;
-  padding: 9px;
+  color: white;
+  /*border: pink 1px dashed;
+  padding: 0px;*/
   font-family: 'Nunito', sans-serif;
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
 }
 
+
+*{
+  margin: 0;
+  padding: 0;
+  /*border: 0;*/
+  font-size: 100%;
+  font: inherit;
+}
+/*
+.content-container{
+  padding: 90px;
+  margin: 0px;
+}
+*/
 .header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .top-logo{
-  background-color: #452222
+  background-color: #452222;
 
 }
 
@@ -29,25 +47,76 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  margin: 0px;
+  background-color: #452222;
 }
 
-.job-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.linkedin{
+  background-color: #452222;
 }
+
+
 
 
 .nav{
   text-align: center;
 }
 
-
-.sprout, .becca, .iprospect, .orva, .tane-organics, .whiteandwarren{
-  display: flex;
-  justify-content: row;
+.content-container{
+padding-left: 150px;
+padding-right: 150px;
 }
 
+.resume h1{
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 50;
+  display: flex;
+  justify-content: center;
+}
+
+.whiteandwarren, .sprout{
+  padding-top: 30px;
+}
+.blurb-container{
+  display: flex;
+  justify-content: center;
+  background-color: #452222;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+
+
+.becca, .orva, .tane-organics, .sprout, .whiteandwarren, .iprospect{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  /*margin-left: auto;
+  margin-right: auto;*/
+}
+
+
+.date-range p{
+  padding-bottom: 10px;
+  color: #452222;
+  background: white;
+  margin: 0px;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+*/
+
+.job-info{
+  display: flex;
+}
+
+.job-info p{
+  text-align: right;
+}
 
 
 
@@ -112,10 +181,100 @@ a:active {
   background-color: #452222;
 }
 
-a, nav, p{
+a, nav, p, li{
   background-color: #452222;
 }
 
-p{
+
+p {
   color: white;
+}
+
+.top-logo{
+  font-size: 20;
+}
+
+a{
+  margin-left: 15px;
+}
+
+/* ABOUT */
+.headshot{
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.headshot img{
+  height: 20%;
+}
+
+h1, h2, h3{
+  color: #452222;
+  font-size: 20px;
+}
+
+h4{
+  background-color: #452222;
+}
+
+.education-content {
+  display: flex;
+  justify-content: row;
+  padding-top:100px;
+  padding-left: 150px;
+}
+
+.education-container{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.degree-container{
+  padding-left: 200px;
+  display: block;
+}
+
+.logo-zicklin{
+  border-style: solid;
+  border-color: navy;
+  border-width: 1px;
+}
+
+.about-me{
+  width: 50%;
+}
+
+.headshot{
+  width: 100%;
+}
+
+.line{
+  width: 3px;
+  background-color: #452222;
+}
+
+.main-content-index{
+display: flex;
+
+}
+
+
+
+
+
+/*FOR MOBILE? TABLE*/
+
+
+
+.becca-image, .orva-image, .tane-image, .sprout-image, .whiteandwarren-image,
+.iprospect-image{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
