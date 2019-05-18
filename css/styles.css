@@ -1,30 +1,17 @@
-* {
-  background-color: white;
-  color: white;
-  /*border: pink 1px dashed;
-  padding: 0px;*/
-  font-family: 'Nunito', sans-serif;
-  /*box-sizing: border-box;*/
-}
 
 
-*{
-  margin: 0;
-  padding: 0;
-  /*border: 0;*/
-  font-size: 100%;
-  font: inherit;
-}
+
 /*
 .content-container{
   padding: 90px;
   margin: 0px;
 }
 */
+
 .header{
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; */
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 10px;
@@ -36,6 +23,8 @@
 
 }
 
+
+
 .body{
   font-family: 'Nunito';
   font-style: normal;
@@ -46,26 +35,56 @@
 .footer{
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
+  background-color: #452222;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.footer img{
+  background-color: #452222;
   margin: 0px;
-  background-color: #452222;
-}
-
-.linkedin{
-  background-color: #452222;
+  padding: 0px;
 }
 
 
-
-
-.nav{
-  text-align: center;
+.cta {
+    background-color: #452222;
+    padding-right: 20px;
 }
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+nav {
+  /* text-align: center; */
+  display: flex;
+}
+
+.top-nav {
+  display: flex;
+}
+
+
+
 
 .content-container{
-padding-left: 150px;
-padding-right: 150px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
+
 
 .resume h1{
   padding-top: 50px;
@@ -203,13 +222,12 @@ a{
   margin-top: 100px;
   margin-left: 20px;
   margin-bottom: 100px;
+  height: 100%;
   display: flex;
   justify-content: center;
 }
 
-.headshot img{
-  height: 20%;
-}
+
 
 h1, h2, h3{
   color: #452222;
@@ -264,17 +282,113 @@ display: flex;
 
 
 
-
+#mobile-menu-button {
+  /* background-color: pink; */
+  display: none;
+}
 
 /*FOR MOBILE? TABLE*/
 
+/* Extra Large devices (large desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {
+  /* styles go here */
+}
+
+/*
+  Large devices (desktops, 992px and down)
+*/
+@media only screen and (max-width: 992px) {
+  /* styles go here */
+}
+
+/*
+  Medium devices (tablets, 768px and down)
+*/
+@media only screen and (max-width: 768px) {
+  #mobile-menu-button {
+      display: block;
+      margin-right: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .header-container {
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .header{
+      padding: 0 8px;
+      /* flex-wrap: wrap; */
+    }
+
+    .top-nav {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+    }
 
 
-.becca-image, .orva-image, .tane-image, .sprout-image, .whiteandwarren-image,
-.iprospect-image{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
+    .top-nav.showing {
+      transition: all 500ms ease-in-out;
+      max-height: 500px;
+    }
+
+    .top-nav.hiding {
+      transition: all 500ms ease-in-out;
+      max-height: 0px;
+    }
+
+    .main-content-index{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .content-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .job-content{
+      display: flex;
+      justify-content: center;
+    }
+
+    .becca, .orva, .tane-organics, .sprout, .whiteandwarren, .iprospect{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      /*margin-left: auto;
+      margin-right: auto;*/
+    }
+
+    .education-container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .education-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .box {
+      text-align: center;
+      padding: 10px;
+      color: #FFFFFF;
+}
+
+  .nav-item {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 5px;
+    padding: 10px;
+  }
+
 }

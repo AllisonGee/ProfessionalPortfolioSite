@@ -2,31 +2,50 @@
 <html>
   <head>
     <title>About Me:</title>
-    <link href='link href="https://fonts.googleapis.com/css?family=Nunito"'
-    rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Nunito"rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+
   </head>
 
   <body>
 
     <div class="header">
-      <div class="top-logo">
-        <h4>Allison Gollub</h4>
-      </div>
+      <div class="header-container container">
+        <div class="top-logo">
+          <h4>Allison Gollub</h4>
+        </div>
 
-      <div class="top-nav">
-        <nav>
-      		<a href="index.html">About Me</a>
-      		<a href="resume.html">Resume</a>
-      		<a href="education.html">Education</a>
-        </nav>
-      </div>
-    </div>
+        <a href="#" id="mobile-menu-button">
+          <i class="fas fa-bars fa-lg"></i>
+        </a>
+
+        <div class="top-nav hiding">
+            <div class="nav-item box">
+        		    <a href="index.html">About Me</a>
+            </div>
+
+            <div class="nav-item box">
+        		    <a href="resume.html">Resume</a>
+            </div>
+
+            <div class="nav-item box">
+        		  <a href="education.html">Education</a>
+            </div>
+
+        </div> <!-- top-nav -->
+
+      </div> <!-- end of container -->
+
+    </div> <!-- end of header -->
 
     <div class="main-content-index">
       <div class="headshot">
         <img src="images/allison-gollub-headshot.png">
       </div>
+
       <div class="line">
         <hr></hr>
       </div>
@@ -45,19 +64,11 @@
     </div>
 
     <div class="footer">
-      <div class="connect">
-      <p>Let's Connect!</p>
-      </div>
-      <div class="linkedin">
-        <img src="images/logo-linkedin.png">
-      </div>
+        <img src="images/linkedin-logo-transparent.png">
     </div>
 
-
-
-
-
-
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
 
 
   </body>
