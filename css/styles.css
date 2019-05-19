@@ -1,12 +1,58 @@
-
-
-
-/*
-.content-container{
-  padding: 90px;
-  margin: 0px;
+* {
+  /* border: 1px blue dashed; */
+  box-sizing: border-box;
 }
-*/
+
+body{
+  font-family: 'Nunito';
+  font-size: 100%;
+  padding-top: 80px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.box {
+  border: 1px #333 solid;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
+.header-container {
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sticky-header {
+  /* styles needed to make the header sticky */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #452222;
+}
+
+.logo-container h4 {
+  background-color: #452222;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
 
 .header{
   /* display: flex;
@@ -18,18 +64,12 @@
   padding-bottom: 10px;
 }
 
-.top-logo{
-  background-color: #452222;
-
-}
 
 
 
-.body{
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-}
+
+
+
 
 
 .footer{
@@ -48,34 +88,11 @@
 }
 
 
-.cta {
-    background-color: #452222;
-    padding-right: 20px;
-}
-
-.container {
-  width: 1140px;
-  margin: 0 auto;
-}
-
-.header-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
 
 
 
 
-nav {
-  /* text-align: center; */
-  display: flex;
-}
 
-.top-nav {
-  display: flex;
-}
 
 
 
@@ -105,8 +122,6 @@ nav {
   border-radius: 5px;
 
 }
-
-
 
 .becca, .orva, .tane-organics, .sprout, .whiteandwarren, .iprospect{
   display: flex;
@@ -262,21 +277,9 @@ h4{
   border-width: 1px;
 }
 
-/* .about-me{
-  display: flex;
-  width: 50%;
-  /* padding-left: 300px;
-  padding-bottom: 100px; */
-/*
-} */
-
-.about-me {
-  padding: 10px;
-  margin: 10px;
+.about-me{
   width: 50%;
 }
-
-
 
 .headshot{
   width: 100%;
@@ -285,6 +288,11 @@ h4{
 .line{
   width: 3px;
   background-color: #452222;
+}
+
+.main-content-index{
+display: flex;
+
 }
 
 
@@ -312,90 +320,36 @@ h4{
   Medium devices (tablets, 768px and down)
 */
 @media only screen and (max-width: 768px) {
+
+  .header-container {
+    padding: 5px 8px;
+    flex-wrap: wrap;
+  }
+
+  .nav-container {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .nav-container.showing {
+    transition: all 500ms ease-in-out;
+    max-height: 500px;
+  }
+
+  .nav-container.hiding {
+    transition: all 500ms ease-in-out;
+    max-height: 0px;
+  }
+
+  .nav-item {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+
   #mobile-menu-button {
-      display: block;
-      margin-right: 20px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    .header-container {
-      flex-wrap: wrap;
-      width: 100%;
-    }
-
-    .header{
-      padding: 0 8px;
-      /* flex-wrap: wrap; */
-    }
-
-    .top-nav {
-      display: block;
-      width: 100%;
-      overflow: hidden;
-    }
-
-
-    .top-nav.showing {
-      transition: all 500ms ease-in-out;
-      max-height: 500px;
-    }
-
-    .top-nav.hiding {
-      transition: all 500ms ease-in-out;
-      max-height: 0px;
-    }
-
-    .main-content-index{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-
-    .content-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .job-content{
-      display: flex;
-      justify-content: center;
-    }
-
-    .becca, .orva, .tane-organics, .sprout, .whiteandwarren, .iprospect{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 15px;
-      margin-bottom: 15px;
-      /*margin-left: auto;
-      margin-right: auto;*/
-    }
-
-    .education-container{
-      display: flex;
-      flex-direction: column;
-    }
-
-    .education-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .box {
-      text-align: center;
-      padding: 10px;
-      color: #FFFFFF;
-}
-
-    .nav-item {
-      width: 100%;
-      margin-left: 0px;
-      margin-top: 5px;
-      padding: 10px;
-    }
+    display: block;
+  }
 
 }

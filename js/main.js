@@ -1,9 +1,9 @@
 $(function () {
   $('#mobile-menu-button').click(function () {
-    if ($('.top-nav').hasClass('showing')) {
-      $('.top-nav').removeClass('showing').addClass('hiding')
+    if ($('.nav-container').hasClass('showing')) {
+      $('.nav-container').removeClass('showing').addClass('hiding')
     } else {
-      $('.top-nav').removeClass('hiding').addClass('showing')
+      $('.nav-container').removeClass('hiding').addClass('showing')
     }
   })
 })
