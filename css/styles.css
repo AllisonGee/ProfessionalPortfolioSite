@@ -266,31 +266,24 @@ h4{
 }
 
 
-/*
-.education-content {
+.education-content{
   display: flex;
-  justify-content: row;
-  padding-top:100px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   padding-left: 150px;
-}
-*/
-.education-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  }
 
-}
+
+
+
 
 .logo-zicklin img{
   display: flex;
   justify-content: center;
 }
 
-/*
-.degree-container{
-  padding-left: 200px;
-  display: block;
-}
+
 
 .logo-zicklin{
   border-style: solid;
@@ -500,6 +493,15 @@ display: flex;
     padding: 10px;
   }
 
+  .education-content{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+  }
+
+
+
 }
 
 @media only screen and (max-width: 576px) {
@@ -540,16 +542,13 @@ display: flex;
     padding-bottom: 25px;
   }
 
-  .main-content-education{
+
+
+  .education-content{
     display: flex;
     flex-direction: column;
 
-  }
-
-  .education-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
 
 }
