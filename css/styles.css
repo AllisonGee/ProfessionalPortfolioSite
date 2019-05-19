@@ -54,6 +54,11 @@ body{
 
 }
 
+nav{
+  display: flex
+
+}
+
 .header{
   /* display: flex;
   flex-direction: row;
@@ -236,7 +241,7 @@ a{
 .headshot{
   margin-top: 100px;
   margin-left: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -278,7 +283,12 @@ h4{
 }
 
 .about-me{
-  width: 50%;
+  padding: 100px;
+  margin: 0px;
+}
+
+.about-me p{
+  padding: 50px;
 }
 
 .headshot{
@@ -306,7 +316,30 @@ display: flex;
 
 /* Extra Large devices (large desktops, 1200px and down) */
 @media only screen and (max-width: 1200px) {
-  /* styles go here */
+  .main-content-index {
+    display: flex;
+    flex-direction: column;
+  }
+
+   .becca, .orva, .tane-organics, .sprout, .whiteandwarren, .iprospect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+  }
+
+  .job-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .blurb-container{
+    padding: 5px;
+    margin: 0px;
+  }
 }
 
 /*
@@ -314,6 +347,47 @@ display: flex;
 */
 @media only screen and (max-width: 992px) {
   /* styles go here */
+  .main-content-index {
+    display: flex;
+    flex-direction: column;
+  }
+
+   .becca, .orva, .tane-organics, .sprout, .whiteandwarren, .iprospect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+  }
+
+  .job-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .blurb-container{
+    padding: 5px;
+    margin: 0px;
+  }
+
+  .becca-image, .iprospect-image, .orva-image, .tane-image, .sprout-image {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  .whiteandwarren-image{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+  }
+
+  .content-container{
+    padding: 10px;
+  }
+
 }
 
 /*
@@ -350,6 +424,98 @@ display: flex;
 
   #mobile-menu-button {
     display: block;
+  }
+
+  .main-content-index {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-me {
+    padding-top: 4px;
+  }
+
+  .content-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .becca, .orva, .tane-organics, .sprout, .whiteandwarren, .iprospect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+  }
+
+  .job-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .becca-image, .iprospect-image, .orva-image, .tane-image, .sprout-image {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  .whiteandwarren-image{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+  }
+
+  .content-container{
+    padding: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 576px) {
+  .headshot{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    height: 100%;
+  }
+
+  .becca, .orva, .tane-organics, .sprout, .whiteandwarren, .iprospect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+  }
+
+  .date-range p{
+    padding: 1px;
+  }
+
+  .content-container{
+    padding: 10px;
+  }
+
+  .becca-image, .iprospect-image, .orva-image, .tane-image, .sprout-image {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  .whiteandwarren-image{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+  }
+
+  .education-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
 }
