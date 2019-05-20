@@ -108,8 +108,8 @@ nav{
 
 
 .resume h1{
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 10px;
   font-size: 50;
   display: flex;
   justify-content: center;
@@ -133,7 +133,8 @@ nav{
   padding: 10px;
   border-radius: 5px;
   flex-wrap: wrap;
-  height: 300px;
+  height: 250px;
+  color: white;
 
 }
 
@@ -392,17 +393,13 @@ display: flex;
     margin: 0px;
   }
 
-  .becca-image, .iprospect-image, .orva-image, .tane-image, .sprout-image {
+  .becca-image, .iprospect-image, .orva-image, .tane-image, .sprout-image, .whiteandwarren-image {
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
   }
 
-  .whiteandwarren-image{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 25px;
-  }
+
 
   .content-container{
     padding: 10px;
