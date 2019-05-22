@@ -16,11 +16,15 @@ body{
 }
 
 .box {
-  border: 1px #333 solid;
+  border: 2px #CE5B78 solid;
   text-align: center;
   padding: 10px;
   border-radius: 5px;
   color: #FFFFFF;
+}
+
+.logo-container{
+  border: 0px;
 }
 
 .header-container {
@@ -43,6 +47,7 @@ body{
   color: white;
   padding: 0;
   margin: 0;
+  font-size: 20px;
 }
 
 
@@ -80,11 +85,10 @@ nav{
 .footer{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   background-color: #452222;
-  width: 100%;
-
-
+  padding-right: 10px;
+  box-shadow: 0 50vh 0 50vh #452222;
 }
 
 .footer img{
@@ -442,6 +446,7 @@ align-items: center;
 
   #mobile-menu-button {
     display: block;
+    margin-right: 10px;
   }
 
   .main-content-index {
@@ -549,4 +554,11 @@ align-items: center;
   .degree-container{
     text-align: center;
   }
+
+  .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #452222;
+    padding-top:5px;
 }
